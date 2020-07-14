@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/group_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF5F5F5"
+        android:orientation="vertical">
+
+        <cn.jiguang.jmlinkdemo.CustomToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/group_shop"
+            android:contentDescription="@string/todo" />
+
+        <Button
+            android:id="@+id/createOrInvtite"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="27dp"
+            android:layout_gravity="center"
+            android:layout_width="312dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_shape"
+            android:text="@string/group_shop_2"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp">
+        </Button>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/group_users"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="14dp"
+        android:layout_gravity="center"
+        android:text="支持定义品牌引导页，结合原生APP UI设计风格，整体统一，提升品牌形象"
+        android:textColor="#FF82838B"
+        android:textSize="14dp"
+        />
+
+    <ImageView
+        android:id="@+id/templateId"
+        android:layout_width="235dp"
+        android:layout_height="476dp"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:src="@drawable/template1"/>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleBackGround">#fff3f3f3</color>
+    <color name="menu_item_back_pres_color">#2DD0CF</color>
+    <color name="colorPrimary">#fff3f3f3</color>
+    <color name="colorPrimaryDark">#858585</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="defaultShadowColor">#333333</color>
+    <color name="wite">#ffffffff</color>
+    <color name="main_theme_color">#0195ff</color>
+    <drawable name="defaultShadowBg">#ffffff</drawable>
+</resources>

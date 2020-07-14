@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <cn.jiguang.jmlinkdemo.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="29dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_gravity="center"
+        android:src="@drawable/replay"
+        android:contentDescription="@string/todo">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="@string/replay_1"
+        android:textColor="#FF222328"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_marginTop="11dp"
+        android:layout_width="294dp"
+        android:layout_height="138dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/replay_2"
+        android:textColor="#FF82838B"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:id="@+id/chooseScenes"
+        android:layout_marginTop="14dp"
+        android:layout_gravity="center"
+        android:layout_width="312dp"
+        android:layout_height="45dp"
+        android:background="@drawable/button_shape"
+        android:text="@string/chooseScenes"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp">
+    </Button>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/replay_3"
+            android:textColor="#FF82838B"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--阴影布局 -->
+    <declare-styleable name="ShadowLayout">
+        <!-- 阴影颜色-->
+        <attr name="shadowColor" format="color"/>
+        <!-- 圆角大小，默认无圆角0-->
+        <attr name="shadowRadius" format="dimension"/>
+        <!-- 模糊半径 -->
+        <attr name="blurRadius" format="dimension" />
+        <!-- 是否有点击效果-->
+        <attr name="hasEffect" format="boolean"/>
+        <attr name="bgColor" format="color"/>
+        <!-- 水平位移-->
+        <attr name="xOffset" format="dimension"/>
+        <!--竖直位移 -->
+        <attr name="yOffset" format="dimension"/>
+        
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    
+</resources>

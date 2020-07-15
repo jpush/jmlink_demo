@@ -1,0 +1,14 @@
+platform:ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+def common_pods
+  pod 'MBProgressHUD'
+  pod 'AFNetworking'
+  pod 'Masonry'
+#  pod 'JShare'
+  pod 'JMLink'
+end
+
+target 'JMLinkApp' do
+  common_pods
+end

@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            storeFile file('./jmlinkdemo.jks')
+            storePassword '123456'
+            keyAlias = 'key0'
+            keyPassword '123456'
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.0"
+    defaultConfig {
+        applicationId "com.jiguang.jmlinkdemo"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                JSHARE_PKGNAME: applicationId,
+                JPUSH_APPKEY  : "a0021ac628bbd4097f6f7da5", //极光控制台创建应用得到的AppKey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                TENCENT_APPID : "1110355905",//腾讯开放平台注册应用得到的appId
+        ]
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.config
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(":lib-ios-dialog")
+    implementation group: 'com.google.android.material', name: 'material', version: '1.2.0-alpha02'
+    implementation 'org.conscrypt:conscrypt-android:2.2.1'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.2'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'cn.jiguang.sdk:jmlink:1.1.0'
+    implementation 'cn.jiguang.sdk:jshare:1.8.0'
+    implementation 'cn.jiguang.sdk:jshare-qqmodel:1.8.0'
+    implementation 'cn.jiguang.sdk:jshare-wechatmodel:1.8.0'
+    implementation 'cn.jiguang.sdk:jcore:2.3.8'
+}

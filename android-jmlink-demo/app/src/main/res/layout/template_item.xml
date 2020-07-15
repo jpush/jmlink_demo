@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dp">
+    <TextView
+        android:background="@drawable/template_btn"
+        android:layout_gravity="center"
+        android:textColor="@color/tab_text_selector"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:id="@+id/btn"
+        android:layout_width="86dp"
+        android:layout_height="28dp" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+
+    <!-- 如果不需要支持某平台，可缺省该平台的配置-->
+    <QQ
+        AppId="1110355905"
+        AppKey="1V2Xxjte9nM3Fmc2"/>
+
+    <Wechat
+        AppId="wxd03c9dd32db1528e"
+        AppSecret="41589636bbd35f7529190d6dcc8df44b"/>
+
+</DevInfor>

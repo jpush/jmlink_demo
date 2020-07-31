@@ -1,0 +1,56 @@
+.game {
+  margin: 23px 32px 0;
+  background: #ffffff;
+  box-shadow: 0 0 5px 0 #e6edff;
+  .title {
+    padding-top: 18px;
+    text-align: center;
+    font-size: 18px;
+    color: #222328;
+  }
+  .id {
+    padding-top: 2;
+    font-size: 14px;
+    color: #82838b;
+    text-align: center;
+    line-height: 22px;
+  }
+}
+
+.main {
+  width: 100%;
+  font-size: 14px;
+  color: #222328;
+  img {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+
+  .my {
+    margin-top: 20px;
+    text-align: center;
+    img {
+      display: inline-block;
+    }
+  }
+  .desktop {
+    background: url(../common/img/地主桌@3x.png) no-repeat 0 center;
+    background-size: contain;
+  }
+  .main-b {
+    display: flex;
+    margin-top: 4px;
+    padding: 0 10px 20px;
+    .desktop {
+      flex: 1;
+    }
+    .player {
+      width: 64px;
+      text-align: center;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}

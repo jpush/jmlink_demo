@@ -1,0 +1,41 @@
+.tip {
+  display: flex;
+  align-items: center;
+  background: #E4EAFF;
+  padding: 8px 6px 8px 8px;
+  img {
+    width: 42px;
+    height: 42px;
+  }
+  .text {
+    flex: 1;
+    padding-left: 8px;
+    overflow: hidden;
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+     
+    }
+    .desc {
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .btns {
+    width: 78px;
+  }
+  .btn {
+    display: block;
+    width: 100%;
+    height: 28px;
+    border-radius: 14px;
+    background-image: linear-gradient(134deg, #658CFF 0%, #3A51FF 100%);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 28px;
+  }
+}
